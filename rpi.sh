@@ -28,7 +28,7 @@ extras="iceweasel wpasupplicant"
 size=3000 # Size of image in megabytes
 
 export packages="${arm} ${base} ${desktop} ${tools} ${services} ${extras}"
-export architecture="armel"
+export architecture="armhf"
 # If you have your own preferred mirrors, set them here.
 # You may want to leave security.kali.org alone, but if you trust your local
 # mirror, feel free to change this as well.
@@ -38,7 +38,7 @@ export security=security.kali.org
 
 # Check to ensure that the architecture is set to ARMEL since the RPi is the
 # only board that is armel.
-if [[ $architecture != "armel" ]] ; then
+if [[ $architecture != "armhf" ]] ; then
     echo "The Raspberry Pi cannot run the Debian armhf binaries"
     exit 0
 fi
